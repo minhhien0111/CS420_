@@ -117,6 +117,9 @@ def create_input_files(dataset, karpathy_json_path, image_folder, captions_per_i
                 # Read images
                 # img = Image.open(impaths[i])
                 img = cv2.imread(impaths[i])
+                if img is None:
+                    print(f"Warning: Could not load image {impaths[i]}. Skipping.")
+                    continue
                 if len(img.shape) == 2:
                     img = img[:, :, np.newaxis]
                     img = np.concatenate([img, img, img], axis=2)
