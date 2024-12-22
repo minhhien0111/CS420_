@@ -87,10 +87,10 @@ def main():
     criterion = nn.CrossEntropyLoss().to(device)
 
     # Custom dataloaders
-    # normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
-    #                                  std=[0.229, 0.224, 0.225])
-    normalize = transforms.Normalize(mean=[0.48235, 0.45882, 0.40784],
-                                     std=[0.00392156862745098, 0.00392156862745098, 0.00392156862745098])
+    normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                     std=[0.229, 0.224, 0.225])
+    # normalize = transforms.Normalize(mean=[0.48235, 0.45882, 0.40784],
+    #                                  std=[0.00392156862745098, 0.00392156862745098, 0.00392156862745098])
     train_loader = torch.utils.data.DataLoader(
         CaptionDataset(data_folder, data_name, 'TRAIN', transform=transforms.Compose([normalize])),
         batch_size=batch_size, shuffle=True, num_workers=workers, pin_memory=True)
