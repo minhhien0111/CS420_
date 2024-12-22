@@ -12,5 +12,5 @@
 ## Chủ đề Image Caption
 - Cách chạy demo của nhóm:
     + Cloning Repository của nhóm về.
-    + Đi vào folder app (bằng terminal).
+    + Tải model trên drive về (link: https://drive.google.com/drive/folders/1j_-V2UNcr0t9UhL55D4EZ6uJpNtQrOGL?usp=sharing) và thêm vào folder model.
     + Chạy lệnh "python -m streamlit run app.py"
