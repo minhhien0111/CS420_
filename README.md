@@ -8,7 +8,7 @@
 | ID | Họ tên | Email |
 |------:|------------|----------|
 |21520229|Tăng Minh Hiển|21520229@gm.uit.edu.vn|
-|21520886|Dương Tấn Hoàng|21520886@gm.uit.edu.vn|
+|21520866|Dương Tấn Hoàng|21520866@gm.uit.edu.vn|
 ## Chủ đề Image Caption
 - Cách chạy demo của nhóm:
     + Cloning Repository của nhóm về.
